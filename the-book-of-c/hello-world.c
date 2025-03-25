@@ -12,7 +12,6 @@ void read_and_print_input(void) {
     }
 }
 
-// Exercise 1
 void read_and_print_input_with_fgets(void) {
     int buff_len = 64;
     char char_buffer[buff_len];
@@ -24,7 +23,6 @@ void read_and_print_input_with_fgets(void) {
     }
 }
 
-// Exercise 2
 void print_char_with_message(int *c) {
     if (*c != '\n') {
         printf("You inputed: ");
@@ -46,7 +44,6 @@ void read_and_print_input_as_uppercase(void) {
     }
 }
 
-// Exercise 3
 void dog_name_and_age_in_human_years(void) {
     char name[100];
     int age_in_human_years;
@@ -81,7 +78,7 @@ int main(void) {
     getchar();             // To consume the newline character left by scanf
 
     if (choice >= 1 && choice <= 4) {
-        fn_ptr[choice - 1]();  
+        fn_ptr[choice - 1]();
     } else {
         printf("Invalid choice\n");
     }
