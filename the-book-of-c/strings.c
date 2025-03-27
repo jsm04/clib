@@ -11,8 +11,9 @@ int main() {
     size_t size =
         strlen(buffer) + 1;  // add 1 for the null termination character!
 
-    char copy[size];
-    strlcpy(copy, buffer, size);
+    // Creates a buffer array of n size to then pass the value in strcpy.
+    char copy_buffer[size];
+    strlcpy(copy_buffer, buffer, size);
 
     return EXIT_SUCCESS;
 }
